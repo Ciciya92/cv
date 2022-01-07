@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-image: url("../img/autumn-poems-header-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+ h1, h2, h3, h4, h5, h6, a, input, button {
+  font-family: 'Abril Fatface', serif;
+  }
+  h1, h2, h3, h4, h5, h6, a{
+    text-decoration: underline;
+  }
+header{
+    height: 25vh;
+}
+main, footer{
+    width: 1000px;
+    background-color: rgba(77, 27, 27, 0.909);
+    margin: 0 auto;
+    color: #C9DF28;
+    font-family: 'Italianno', cursive;
+}
+main{
+  padding-bottom: 1%;
+}
+footer{
+  width: auto;
+  height: auto;
+  margin: 5% auto;
+}
+nav{
+    /*display: flex;
+    justify-content: space-around;
+    background-color: rgba(77, 27, 27, 0.788);
+    height: 5vh;*/
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+}
+
+nav a{
+    color: white;
+    font-family: 'Italianno', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+p{
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.photo-perso{
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+#competences{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 3%;
+    font-size: 20px;
+}
+#competences h1{
+    width: 100%;
+    text-align: center;
+}
+.competences-1, .competences-2{
+    width: 50%;
+}
+#competences label{
+    color: rgb(118, 158, 24);
+    display: block;
+    font-family: 'Italianno', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#parcours-1{
+  display: flex;
+  justify-content: space-between;
+  color: #C9DF28;
+  padding: 1%;
+  font-size: 15px;
+  text-align: center;
+}
+#parcours-1 a{
+  width: 30%;
+  margin: 1%;
+  background-color: #a55c1b;
+  background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  padding: 1%;
+  border: 5px solid #161618d8;
+  border-radius: 20px;
+  /* box-shadow: 10px 5px 5px rgb(43, 42, 42); */
+  box-shadow: 5px 10px 8px #888888;
+
+}
+#parcours-2{
+  display: flex;
+  justify-content: space-between;
+  color: #C9DF28;
+  padding: 1%;
+  font-size: 15px;
+  text-align: center;
+}
+#parcours-2 a{
+  width: 30%;
+  margin: 1%;
+  background-color: #a55c1b;
+  background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  padding: 1%;
+  border: 5px solid #161618d8;
+  border-radius: 20px;
+  /* box-shadow: 10px 5px 5px rgb(43, 42, 42); */
+  box-shadow: 5px 10px 8px #888888;
+
+}
+
+#univers a{
+  background-color: #4CAF50; /* Green */
+  border: 2px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 20%;
+}
+#contacter{
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  border: 5px solid #161618d8;
+  background-color: #a55c1b;
+  background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  justify-content: space-around;
+  box-shadow: 5px 10px 8px #888888;
+}
+.me-contacter input{
+  display: block;
+  margin-top: 2%;
+  width: 200px;
+  text-align: center;
+}
+.me-contacter :nth-child(5n){
+  width: 350px;
+  height: 200px;
+}
+iframe{
+  margin-left: 10%;
+  margin-top: 12%;
+}
+.button{
+  width: 150px;
+  height: 50px;
+  align-self: center;
+
+}
+input{
+  width: 100px;
+  height: 50px;
+  align-self: flex-end;
+}
+input::placeholder{
+  color: #000000;
+}
+  /*Progress bar*/
+
+  .ProgressBar {
+    width: 250px;
+    height: 20px;
+    border: 2px solid rgb(163, 105, 18);
+    border-radius: 7px;
+    padding: 4px;
+  }
+  
+  .Progress {
+    width: 0%;/*Progression de la comp*/
+    background-color: #07e0bc;
+    height: 0%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-color: rgb(163, 105, 18);
+    
+    animation-name: progressBar;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 0%;
+    }
+    
+    100% {
+      width: 0%;/*Progression de la comp*/
+    }
+  }
+  .ProgressBar-65 {
+    width: 250px;
+    height: 20px;
+    border: 2px solid rgb(163, 105, 18);
+    border-radius: 7px;
+    padding: 4px;
+  }
+  
+  .Progress-65 {
+    width: 65%;/*Progression de la comp*/
+    background-color: #07e0bc;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-color: rgb(163, 105, 18);
+    
+    animation-name: progressBar-65;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+  }
+  
+  @keyframes progressBar-65 {
+    0% {
+      width: 0%;
+    }
+    
+    100% {
+      width: 65%;/*Progression de la comp*/
+    }
+  }
+
+  .ProgressBar-55 {
+    width: 250px;
+    height: 20px;
+    border: 2px solid rgb(163, 105, 18);
+    border-radius: 7px;
+    padding: 4px;
+  }
+  
+  .Progress-55 {
+    width: 55%;/*Progression de la comp*/
+    background-color: #07e0bc;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-color: rgb(163, 105, 18);
+    
+    animation-name: progressBar-55;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 0%;
+    }
+    
+    100% {
+      width: 55%;/*Progression de la comp*/
+    }
+  }
+
+  .ProgressBar-25 {
+    width: 250px;
+    height: 20px;
+    border: 2px solid rgb(163, 105, 18);
+    border-radius: 7px;
+    padding: 4px;
+  }
+  
+  .Progress-25 {
+    width: 25%;/*Progression de la comp*/
+    background-color: #07e0bc;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-color: rgb(163, 105, 18);
+    
+    animation-name: progressBar-25;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+  }
+  
+  @keyframes progressBar-25 {
+    0% {
+      width: 0%;
+    }
+    
+    100% {
+      width: 25%;/*Progression de la comp*/
+    }
+  }
+
+
